@@ -80,4 +80,20 @@ class StringCalcTest {
 
     }
 
+    @Test
+    @DisplayName("test new lines between numbers ")
+    void testAddMoreLinesBetweenNumbers() {
+
+
+        String numbers = "1\n2,3";
+
+        int actual = 0;
+
+        int expected = 6;
+
+        actual = stringCalc.add(numbers);
+
+        assertEquals(expected, actual);
+
+    }
 }

@@ -9,7 +9,7 @@ if (numbers.isBlank())
 else {
     String [] arrayNumbers = null;
     int sum = 0;
-    arrayNumbers = numbers.split(",");
+    arrayNumbers = numbers.split("[\n,]");
 
     for (var arraynumber:arrayNumbers){
     sum += Integer.parseInt(arraynumber);
