@@ -63,4 +63,21 @@ class StringCalcTest {
 
     }
 
+    @Test
+    @DisplayName("Test string with unknown amount of numbers")
+    void testAddUnknownAmountOfNumbers() {
+
+
+        String numbers = "1,2,3,4,5,6,7,8";
+
+        int actual = 0;
+
+        int expected = 36;
+
+        actual = stringCalc.add(numbers);
+
+        assertEquals(expected, actual);
+
+    }
+
 }
