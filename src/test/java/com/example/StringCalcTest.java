@@ -148,6 +148,22 @@ class StringCalcTest {
 
     }
 
+    @Test
+    @DisplayName("test more delimiters with stars ")
+    void testMoreDelimitersStar() {
+
+
+        String numbers = "//[***]\n1***2***3";
+
+        int actual = 0;
+
+        int expected = 6;
+
+        actual = stringCalc.add(numbers);
+
+        assertEquals(expected, actual);
+    }
+
 
 
 
