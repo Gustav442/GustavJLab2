@@ -131,6 +131,23 @@ class StringCalcTest {
         assertThatExceptionOfType(RuntimeException.class).isThrownBy(() -> stringCalc.add(numbers)).withMessage("negative numbers NOT ALLOWED!![-1, -12]");
     }
 
+    @Test
+    @DisplayName("test numbers above 1000 ")
+    void testNumbersAbove1000() {
+
+
+        String numbers = "2,1001";
+
+        int actual = 0;
+
+        int expected = 2;
+
+        actual = stringCalc.add(numbers);
+
+        assertEquals(expected, actual);
+
+    }
+
 
 
 

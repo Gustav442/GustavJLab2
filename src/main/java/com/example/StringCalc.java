@@ -14,6 +14,7 @@ public class StringCalc {
 
 
         else {
+
             if (numbers.length() > 1)
                 if (numbers.substring(0, 2).equals("//"))
                     numbers = numbers.substring(4);
@@ -25,9 +26,10 @@ public class StringCalc {
 
 
             for (var arraynumber : arrayNumbers) {
-                if (Integer.parseInt(arraynumber) > 0)
+                if (Integer.parseInt(arraynumber) > 0 && (Integer.parseInt(arraynumber) <= 1000))
                     sum += Integer.parseInt(arraynumber);
-                else
+
+                else if(Integer.parseInt(arraynumber) < 0)
                     negativeNumberList.add(arraynumber);
 
             }
