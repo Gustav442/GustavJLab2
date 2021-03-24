@@ -3,6 +3,8 @@ package com.example;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class StringCalcTest {
@@ -113,5 +115,23 @@ class StringCalcTest {
         assertEquals(expected, actual);
 
     }
+    @Test
+    @DisplayName("Test with negative number")
+    void testNegativeNumber() {
+
+
+        String numbers = "-1,-12,12";
+
+
+
+        String expected = "negative numbers NOT ALLOWED!![-1, -12]";
+
+
+
+        assertThatExceptionOfType(RuntimeException.class).isThrownBy(() -> stringCalc.add(numbers)).withMessage("negative numbers NOT ALLOWED!![-1, -12]");
+    }
+
+
+
 
 }
