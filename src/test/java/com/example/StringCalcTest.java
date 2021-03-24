@@ -96,4 +96,22 @@ class StringCalcTest {
         assertEquals(expected, actual);
 
     }
+
+    @Test
+    @DisplayName("test for more delimiters ")
+    void testAddMoreDelimiters() {
+
+
+        String numbers = "//;\n1,2";
+
+        int actual = 0;
+
+        int expected = 3;
+
+        actual = stringCalc.add(numbers);
+
+        assertEquals(expected, actual);
+
+    }
+
 }
