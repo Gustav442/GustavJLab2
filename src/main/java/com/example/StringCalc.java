@@ -24,9 +24,10 @@ public class StringCalc {
                         newDelimiter = numbers.substring(numbers.indexOf('[') + 1, numbers.indexOf(']'));
                         numbers = numbers.replace(newDelimiter.trim(), ",");
                         numbers = numbers.substring(numbers.indexOf(']')+1);
-                        numbers = numbers.substring(numbers.indexOf("n")+2);
+                        numbers = numbers.substring(numbers.indexOf("\n")+1);
                     }else
-                        numbers = numbers.substring(4);
+                        numbers = numbers.substring(numbers.indexOf("\n")+1);
+
                 }
 
 
