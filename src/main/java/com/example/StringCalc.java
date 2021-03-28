@@ -1,7 +1,6 @@
 package com.example;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class StringCalc {
     int sum = 0;
