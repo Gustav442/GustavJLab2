@@ -8,11 +8,9 @@ public class TestEmployeeRepository implements EmployeeRepository {
     @Override
     public List<Employee> findAll() {
 
-        return List.of(new Employee( "Gustav", 250000.0),
-                new Employee("Jessica", 25000.0),
-                new Employee("Tahar", 25000.0));
-
-
+        return List.of(new Employee("Gustav", 24.0),
+                new Employee("Jessica", 24.0),
+                new Employee("Tahar", 24.0));
 
 
     }
